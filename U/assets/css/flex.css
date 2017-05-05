@@ -1,0 +1,118 @@
+/* 
+* @Author: Marte
+* @Date:   2017-04-10 09:39:35
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-04-19 15:38:28
+*/
+html,body{
+    background:#f6f6f6;
+  }  
+ .banner img{
+             width: 100%;
+             height: auto;
+             background-size:100% 100%;
+       }
+.list{
+     background:#fff;
+       }
+.list i,.list span{
+    display:inline-block;
+}
+.headerImg{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow-x: hidden;
+    display:inline-block;
+    float: left;
+    margin: 15px 6px 0 30px;
+    /* position: absolute; */
+}
+.tx-icon{
+    width: 47px;
+    height: 54px;
+    background:url(../img/e.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    float: left;
+    margin: 23px 14px 0 30px;
+}
+.up-icon{
+    width: 47px;
+    height: 54px;
+    background:url(../img/up.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    float: left;
+    margin: 23px 10px 0 30px;
+}
+.users{
+    color:#f88b4e;
+    font-size: 24px;
+    margin-left: 10px;
+}
+.list li{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 1px solid #f6f6f6;
+}
+.menu-right{
+    width: 17px;
+    height: 30px;
+    background:url(../img/NSimg/menu_right.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    float: right;
+    margin: 35px 20px 0 0;
+}
+.list-name{
+    height: 100px;
+    line-height: 100px;
+    color:#333;
+    font-size: 30px;
+    font-family: '微软雅黑';
+}
+span.user-name{
+    font-size: 30px;
+}
+.allList li{
+    width: 24.8%;
+    height: 160px;
+    float: left;
+    border-right: 1px solid #f6f6f6;
+    border-top: 1px solid #f6f6f6;
+    /* padding: 10px 0; */
+    background: #fff;
+}
+.allList{
+    text-align: center;
+    background:#fff;
+    width: 100%;
+    /* height: 176px; */
+    margin-top: 10px;
+}
+.allList li:nth-child(4),.allList li:nth-child(8){
+    border-right: 0;
+}
+.wrapper{
+    position: relative;
+}
+.foot{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    bottom: -100px;
+    font-size: 24px;
+    font-family: '微软雅黑';
+    color: #333;
+}
+.allList img{
+    width: 70px;
+    height: 70px;
+    margin: 15px 0;
+}
+

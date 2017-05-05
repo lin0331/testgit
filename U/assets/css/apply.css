@@ -1,0 +1,86 @@
+html,body{
+    background:#f6f6f6;
+}
+.wrapper{
+    text-align: center;
+}
+.view{
+   background:#fff;
+}
+.vew ul li div{
+        display:inline-block;
+        float: left;
+       }
+       .col-25{
+    width: 25%;
+    float: left;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    }
+    .col-50{
+        width: 50%;
+        float: left;
+        line-height: 1.3rem;
+    }
+    .view ul{
+        width: 90%;
+        margin:0 auto;
+        
+    }
+    .view ul li{
+        border-bottom: 1px solid #f6f6f6;
+        height: 1.3rem;
+        line-height: 1.3rem;
+        padding:0 10px;
+        position: relative;
+    }
+    .col-50 input{
+        width: 100%;
+        /* height: 0.2rem; */
+        font-size: 14px;
+        font-family: '微软雅黑';
+        margin-top: 9px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    i.menu_right{
+        width: .4rem;
+        height: .7rem;
+        background:url(../img/NSimg/menu_right.png) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top:10px;
+    }
+    .next-btn{
+        border: 0;
+        width: 90%;
+        height: 1rem;
+        line-height: 1rem;
+        border-radius: 6px;
+        margin:20px auto ;
+        font-size: 20px;
+        color:#fff;
+        background:#008fff;
+    }
+    #age{
+        display: none;
+    }
+    .sex-select {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top:0;
+
+}
+span#sex,span#years {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    font-family: '微软雅黑';
+}
+select::-ms-expand { display: none; }

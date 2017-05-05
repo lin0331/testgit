@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>小U车管</title>
+    <script type="text/javascript" src="../assets/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="../assets/js/flexible.debug.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/js/swiper/css/swiper.min.css" />
+    <script type="text/javascript" src="../assets/js/swiper/js/swiper.min.js"></script>
+    <style type="text/css">
+     .index-bottom {
+    bottom: 0;
+}
+.swiper-container {
+    width: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 140px;
+}
+.index-content .swiper-container-horizontal>.swiper-pagination {
+    position: absolute;
+    height: 20px;
+    bottom: 0;
+}
+.index-content span {
+    opacity: 1;
+}
+.index-content .swiper-pagination-bullet {
+    background: #ccc;
+    width: 30%;
+    height: 5px;
+    border-radius: 0;
+}
+.index-content .swiper-pagination-bullet-active {
+    background: #fff;
+}
+.index-container{
+    height:140px;
+    overflow: hidden;
+}
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet {
+     margin: 0px; 
+}
+.swiper-container-horizontal>.swiper-pagination {
+    left: 35%;
+    width: 30%;
+}
+.allList a{
+  width: 24.6%;
+  height: 24.6%;
+  display: block;
+  float: left;
+}
+.allList li{
+  width: 100%;
+}
+    </style>
+</head>
+<body> 
+      <div class="wrapper">
+      <div class="banner">
+           <div class="index-container">
+        <div class="index-content">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href=""><img src="../assets/img/banner.png" height="210" width="627"  alt="" />
+                        </a>
+                    </div>
+                     <div class="swiper-slide">
+                         <img src="../assets/img/iconImg (1).png" height="70" width="70"  alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/img/banner.png" height="210" width="627"  alt="" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          </div>
+      </div>
+       <div class="list">
+           <ul> 
+             <li>
+               <img src="../assets/img/banner.png" class="headerImg" alt="" />
+               <span class='user-name'>美丽的竟无言</span>
+               <span class="users">普通用户</span>
+                <i class="menu-right"></i>
+             </li>
+             <li>
+               <i class="tx-icon"></i>
+               <span class='list-name'>e会员认证</span>
+               <i class="menu-right"></i>
+             </li>
+             <li>
+               <i class="up-icon"></i>
+               <span class='list-name'>升级会员服务</span>
+               <i class="menu-right"></i>
+             </li>
+           </ul>
+       </div>
+       <div class="allList">
+            <ul>
+            <a href="">
+              <li>
+              
+                 <img src="../assets/img/iconImg (6).png"  alt="" />
+                 <p>违法办理</p>
+
+              </li>
+               </a>
+             <a href="">
+               <li>
+                 <img src="../assets/img/iconImg (4).png"  alt="" />
+                 <p>决定书交罚</p>
+              </li>
+              </a>
+              <a href="">
+               <li>
+                 <img src="../assets/img/iconImg.png"  alt="" />
+                 <p>六年免检</p>
+              </li>
+              </a>
+              <a href="">
+               <li>
+                 <img src="../assets/img/iconImg (5).png"  alt="" />
+                 <p>年审预约</p>
+              </li>
+              </a>
+              <a href="">
+                <li>
+                 <img src="../assets/img/iconImg (3).png"  alt="" />
+                 <p>驾驶证补换</p>
+              </li>
+              </a>
+              <a href="">
+                <li>
+                 <img src="../assets/img/iconImg (7).png"  alt="" />
+                 <p>自助机查询</p>
+              </li>
+              </a>
+              <a href="">
+                <li>
+                 <img src="../assets/img/iconImg (1).png" height="70" width="70" alt="" />
+                 <p>车船税</p>
+              </li>
+              </a>
+              <a href="">
+                <li>
+                 <img src="../assets/img/iconImg (2).png" height="70" width="70" alt="" />
+                 <p>车辆保险</p>
+              </li>
+              </a>
+            </ul>
+       </div>
+       <p class="foot">服务店|业务指南</p>
+       </div>
+       <script type="text/javascript" >
+        var height= document.documentElement.clientHeight;
+        $('.wrapper').css('height', height+'px');
+        $('.foot').css('bottom', '0px');
+         $(function(){
+    var swiper=new Swiper('.swiper-container',{
+        // autoplay:3000,
+        pagination:'.swiper-pagination',
+        paginationClickable:true,
+    })
+ })
+       </script>
+</body>
+</html>

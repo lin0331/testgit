@@ -1,0 +1,32 @@
+﻿引用：
+<script type="text/javascript" src="../Scripts/Index/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../Content/css/animate.css">
+<script type="text/javascript" src="../Scripts/ShowBoxWechat/showBox.js"></script>
+<link rel="stylesheet" type="text/css" href="../Scripts/ShowBoxWechat/showBox.css">
+
+使用：
+	$('.invite-btn').click(function() {
+		//'zoomIn'：进入效果
+		//'bounceOut'：退出效果
+		//'sharef'：弹框ID
+		//'colse'：关闭按钮Class
+		//fn：方法名
+		showBox('zoomIn','bounceOut','sharef','colse',fn);
+	});
+
+	$('.invite-btn').click(function() {
+		//'sharef'：弹框ID
+		//'colse'：关闭按钮Class
+		//fn：方法名
+		showBox1(sharef,colse,fn); //有默认的进入与退出效果不需要引入animate.css
+	});
+
+界面:
+	<!-- 遮层 class="afix" 全HTML只用一个 -->
+	<div class="afix"></div>
+	<!-- 弹框 class="box"-->
+	<div class="box" id="sharef">
+		<div class="colse">关闭</div>
+		<!--内容-->
+		...
+	</div>

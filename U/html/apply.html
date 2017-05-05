@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>填写信息</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
+    <script type="text/javascript" src="../assets/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="../assets/js/flexible.debug.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/apply.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/js/ShowBoxWechat/showBox.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/js/mdialog/css/basic.css" />
+</head>
+<body>
+     
+      <div class="view">
+          <ul>
+              <li>
+                  <div class="col-25" >
+                      姓名
+                  </div>
+                  <div class="col-50">
+                      <input type="text" placeholder='请输入写姓名' id="name"/>
+                  </div>
+                   
+              </li>
+              <li>
+                  <div class="col-25" >
+                      性别
+                  </div>
+                  <div class="col-50">
+                    <span id="sex"></span>
+                    <select id="sexSelect" class="sex-select">
+                      <option value="01">女</option>
+                      <option value="02">男</option>
+                    </select>
+                  </div>
+                  <i class="menu_right" id='sex-c'></i>   
+              </li>
+              <li>
+                  <div class="col-25" >
+                      联系电话
+                  </div>
+                  <div class="col-50">
+                      <input type="text" placeholder='请输入联系电话' id="phone" />
+                  </div>
+                  
+              </li>
+              <li>
+                  <div class="col-25" >
+                      年纪
+                  </div>
+                  <div class="col-50">
+                    <input type="text" placeholder='请输入联系电话' id="" />
+                    
+                  </div>
+                    
+              </li>
+              <li>
+                  <div class="col-25" >
+                      投保金额
+                  </div>
+                  <div class="col-50">
+                      <input type="text" placeholder='请输入投保金额' id="account" />
+                  </div>
+                   
+              </li>
+              <li>
+                  <div class="col-25" >
+                      投保年限
+                  </div>
+                  <div class="col-50">
+                      
+                    <span id="years">投保年限</span>
+                    <select id="insurance" class="sex-select">
+                      <option value="1">5年</option>
+                      <option value="2">10年</option>
+                      <option value="3">20年</option>
+                    </select>
+                  </div>
+                  <i class="menu_right" id='years-c'></i> 
+                  
+              </li>
+
+          </ul>
+      </div>
+      <div class="wrapper">
+      <button class="next-btn" onclick="submit()">下一步</button>
+      </div>
+     
+      <script type="text/javascript" src="../assets/js/mdialog/js/mdialog.js"></script>
+       <script type="text/javascript">
+          $('#sexSelect').on('change',function(){
+              $('#sex').text($('#sexSelect option:selected').text());
+         });
+          $('#insurance').on('change',function(){
+              $('#years').text($('#insurance option:selected').text());
+         });
+          function submit(){
+                 var name=$('#name').val();
+                 var age=$('#age').val();
+                 var account=$('#account').val();
+                 var sex=$('#sexSelect option:selected').val();
+                 var years=$('#insurance option:selected').val();
+                 var phone=$('#phone').val();
+                 if(name==''){
+                  malert('请输入您的姓名')
+                 }
+                 else if(sex==''){
+                  malert('请选择您的性别')
+                 }
+                 else if(age==''){
+                  malert('请输入您的年龄')
+                 }
+                 else if(account==''){
+                  malert('请输入您的投保金额')
+                 }
+                 else if(account>100000){
+                  alert(account)
+                  malert('您的投保金额不能超过10万元')
+                 }
+                 
+                 else if(years==''){
+                  malert('请选择您的投保年限')
+                 }
+                 else{
+
+                 }
+          }
+      </script>
+      
+</body>
+</html>

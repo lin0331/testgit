@@ -1,0 +1,98 @@
+/*弹窗*/
+.afix {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	display: none;
+	overflow: auto;
+	overflow-y: scroll;
+	background-color: rgba(0,0,0,.7);
+}
+.box {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	right:10px;
+	bottom: 0;
+	z-index: 200;
+	display: none;
+	overflow: hidden;
+	overflow-y: hidden;
+	-webkit-box-align: center;
+	-webkit-box-pack:center;
+}
+/********/
+/*弹框入场与出场动画*/
+@-webkit-keyframes izoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes izoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.izoomIn {
+  -webkit-animation: izoomIn 1s;
+  animation: izoomIn 1s;
+}
+@-webkit-keyframes ibounceOut {
+  20% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50%, 55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+@keyframes ibounceOut {
+  20% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50%, 55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+.ibounceOut {
+  -webkit-animation: ibounceOut .75s;
+  animation: ibounceOut .75s;
+}

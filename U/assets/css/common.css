@@ -1,0 +1,177 @@
+body{padding: 0;margin: 0;height: 100%;width: 100%;background: #fff;font-family: "PingFang SC";}
+p,ul,li,a{padding: 0;margin: 0;}
+ol,ul,li{list-style-type :none;margin:0;padding:0;}
+a,a:hover{text-decoration: none;color: #000;}  
+.col-xs-2{width: 16.6666%;float: left;}
+.col-xs-3{width: 25%;float: left;}
+.col-xs-4{width: 33.3333%;float: left;}
+.col-xs-8{width: 66.6666%;float: left;} 
+.col-xs-5{width: 41.6666%;float: left;} 
+.col-xs-6{width: 50%;float: left;} 
+.col-xs-9{width: 75%;float: left;}
+.col-xs-7{width: 58.3333%;float: left;}
+.col-xs-10{width: 83.3333%;float: left;}
+.col-xs-12{width: 100%;float: left;}
+
+.relaticediv{position: relative;} 
+.comfirmImg{height:1.04rem;margin-top: 0.1rem;}
+.white{color:#fff;}
+.gray{color: #808080;} 
+.black{color: #000;}
+.green{color:#01d737;}
+.content{width: 100%;}
+.red{color:#e74731;}
+.yellow{color:#fff000;}
+.row{width: 100%;}
+.blue{color:#10abeb;}
+.underline{text-decoration:underline;}
+
+.rightbox{position: absolute;right: 0;top: 0.2rem;}
+
+/*文字大小*/
+/*.font-24{font-size:0.32rem;}   
+.font-26{font-size:0.346666rem;}   
+.font-28{font-size:0.373333rem;}   
+.font-30{font-size:0.4rem;}  
+.font-32{font-size: 0.42666rem;}
+.font-36{font-size: 0.48rem;}*/
+
+/*.font-24{font-size:12px;}   
+.font-26{font-size:13px;}   
+.font-28{font-size:14px;}   
+.font-30{font-size:15px;}  
+.font-32{font-size:16px;}
+.font-36{font-size:18px;}*/
+.font-22{font-size:22px;}
+.font-24{font-size:24px;}   
+.font-26{font-size:26px;}   
+.font-28{font-size:28px;}   
+.font-30{font-size:30px;}  
+.font-32{font-size:32px;}
+.font-36{font-size:36px;}
+.font-48{font-size:48px;}
+.font-40{font-size:40px;}
+.font-90{font-size:90px;}
+.col-25{
+  width: 25%;
+  float: left;
+}
+.col-50{
+  width: 50%;
+  float: left;
+}
+
+[data-dpr="1"] .font-22{font-size: 11px;}
+[data-dpr="1"] .font-24{font-size: 12px;}
+[data-dpr="1"] .font-26{font-size: 13px;}
+[data-dpr="1"] .font-28{font-size: 14px;}
+[data-dpr="1"] .font-30{font-size: 15px;}
+[data-dpr="1"] .font-32{font-size: 16px;}
+[data-dpr="1"] .font-36{font-size: 18px;}
+[data-dpr="1"] .font-48{font-size: 24px;}
+[data-dpr="1"] .font-40{font-size: 20px;}
+[data-dpr="1"] .font-90{font-size: 45px;}
+
+[data-dpr="2"] .font-22{font-size: 22px;}
+[data-dpr="2"] .font-24{font-size: 24px;}
+[data-dpr="2"] .font-26{font-size: 26px;}
+[data-dpr="2"] .font-28{font-size: 28px;}
+[data-dpr="2"] .font-30{font-size: 30px;}
+[data-dpr="2"] .font-32{font-size: 32px;}
+[data-dpr="2"] .font-36{font-size: 36px;}
+[data-dpr="2"] .font-48{font-size: 48px;}
+[data-dpr="2"] .font-40{font-size: 40px;}
+[data-dpr="2"] .font-90{font-size: 90px;}
+
+[data-dpr="3"] .font-22{font-size: 33px;}
+[data-dpr="3"] .font-24{font-size: 36px;}
+[data-dpr="3"] .font-26{font-size: 39px;}
+[data-dpr="3"] .font-28{font-size: 42px;}
+[data-dpr="3"] .font-30{font-size: 45px;}
+[data-dpr="3"] .font-32{font-size: 48px;}
+[data-dpr="3"] .font-36{font-size: 54px;}
+[data-dpr="3"] .font-48{font-size: 72px;}
+[data-dpr="3"] .font-40{font-size: 60px;}
+[data-dpr="3"] .font-90{font-size: 135px;}
+
+.left{text-align: left;float: left}
+.right{text-align: right;float: right}
+
+input{border: 0;}
+p{margin-bottom: 0;}
+.clearbox{clear: both;overflow: hidden;}
+select{border: 0;}
+
+
+ 
+.blackhalfbtn{background: #000;color: #fff;border-radius: 0.5rem;border: 1px solid #000;padding: 0.4rem;width: 45%;margin-top: 0.6rem;margin-left: 3%; }  
+.whitehalfbtn{background: #fff;color: #000;border-radius: 0.5rem;border: 1px solid #000;padding: 0.4rem;width: 45%;margin-top: 0.6rem;margin-right: 3%; }  
+
+.noborder{border: none;}
+
+input,select,a,i,button {outline:none;}
+*{-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.nodisplay{display: none;
+
+}
+
+input{ 
+	appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; -webkit-appearance:none;
+	    text-rendering: auto;
+	    letter-spacing: normal;
+	    word-spacing: normal;
+	    text-transform: none;
+	    text-indent: 0px;
+	    text-shadow: none;
+	    text-align: start;
+	    color: inherit;
+	     
+}
+
+.spinner {
+  position: fixed;
+  z-index: 3;
+  top:35%;
+  width: 100%;
+  text-align: center;
+}
+ 
+.spinner > div {
+  width: 30px;
+  height: 30px;
+  background-color: #67CF22;
+ 
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+ 
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+ 
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+ 
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
